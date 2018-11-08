@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Real Dom Example</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script >
+
+    function tick() {
+      const element = `<div>
+          <h1>Virtual Clock :)</h1>
+          <h2>São: ${new Date().toLocaleTimeString()}.</h2>
+        </div>`
+
+      document.getElementById("root").innerHTML = element
+    }
+
+    setInterval(tick, 1000);
+
+  </script>
+</body>
+
+</html>
