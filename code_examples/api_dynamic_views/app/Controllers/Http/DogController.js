@@ -2,7 +2,7 @@
 
 class DogController {
 
-  async suggestName ({response}) {
+  async suggestNameJson ({response}) {
     return response.json({ name: this.searchName() })
   }
 
